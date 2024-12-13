@@ -1,0 +1,98 @@
+GET /api/data:
+  method: GET
+  path: /api/data
+  response:
+    message: "Mock data fetched successfully!"
+  statusCode: 200
+
+
+
+
+
+
+POST /api/data:
+  method: POST
+  path: /api/data
+  response:
+    message: "Mock data posted successfully!"
+  statusCode: 201
+
+
+
+
+
+GET /api/defaults:
+  method: GET
+  path: /api/defaults
+  response:
+    defaults:
+      -
+        name: rate (percentage)
+        type: string
+        value: 20
+      -
+        name: charges (inr)
+        type: number
+        value: 589.50
+
+
+
+
+
+GET /api/test:
+  method: GET
+  path: /api/test
+  response:
+    json:
+      - rigid
+      - better for data interchange
+    yaml:
+      - slim and flexible
+      - better for configuration
+    object:
+      key: value
+      array:
+        - null_value: null
+        - boolean: true
+        - integer: 1
+        - alias: aliases are like variables
+        - alias: aliases are like variables
+    paragraph: |
+      Blank lines denote
+      paragraph breaks
+    content: |-
+      Or we
+      can auto
+      convert line breaks
+      to save space
+    alias:
+      bar: baz
+    alias_reuse:
+      bar: baz
+
+
+
+#      route for getting users and their experience
+GET /api/asas:
+  method: GET
+  path: /api/asas
+  response:
+    -
+      serialNo: 1
+      firstName: Akash
+      lastName: Karar
+      gender: Male
+      exp:
+        -
+          companyName: AIPL
+          years: 3
+
+    -
+      serialNo: 2
+      firstName: Nilesh
+      lastName: Suthar
+      gender: Male
+      exp:
+        -
+          companyName: AIPL
+          years: 2.5

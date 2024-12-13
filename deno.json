@@ -1,0 +1,10 @@
+{
+  "tasks": {
+    "dev": "deno run  --allow-net --allow-read --allow-write --watch main_deno.ts",
+    "compile": "deno compile --allow-net --allow-read --allow-write --output mock-my-backend main_deno.ts",
+    "compile:release": "deno compile --lite --allow-net --allow-read --allow-write --output mock-my-backend main_deno.ts"
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
