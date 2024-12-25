@@ -96,3 +96,181 @@ GET /api/asas:
         -
           companyName: AIPL
           years: 2.5
+
+
+
+
+
+
+
+
+# route for getting repayment schedule as part of kfs
+GET /api/get-repayment-schedule:
+  method: GET
+  path: /api/asas
+  response:
+    repayment_schedule:
+      - payment_number: 1
+        payment_date: "2023-01-01"
+        principal_payment: 150.00
+        interest_payment: 45.00
+        total_payment: 195.00
+        remaining_balance: 9850.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 2
+        payment_date: "2023-02-01"
+        principal_payment: 155.00
+        interest_payment: 41.25
+        total_payment: 196.25
+        remaining_balance: 9695.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 3
+        payment_date: "2023-03-01"
+        principal_payment: 160.00
+        interest_payment: 37.00
+        total_payment: 197.00
+        remaining_balance: 9535.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 4
+        payment_date: "2023-04-01"
+        principal_payment: 165.00
+        interest_payment: 32.75
+        total_payment: 197.75
+        remaining_balance: 9370.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 5
+        payment_date: "2023-05-01"
+        principal_payment: 170.00
+        interest_payment: 28.00
+        total_payment: 198.00
+        remaining_balance: 9200.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 6
+        payment_date: "2023-06-01"
+        principal_payment: 175.00
+        interest_payment: 23.25
+        total_payment: 198.25
+        remaining_balance: 9025.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 7
+        payment_date: "2023-07-01"
+        principal_payment: 180.00
+        interest_payment: 18.00
+        total_payment: 198.00
+        remaining_balance: 8845.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 8
+        payment_date: "2023-08-01"
+        principal_payment: 185.00
+        interest_payment: 12.75
+        total_payment: 197.75
+        remaining_balance: 8660.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 9
+        payment_date: "2023-09-01"
+        principal_payment: 190.00
+        interest_payment: 7.00
+        total_payment: 197.00
+        remaining_balance: 8470.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 10
+        payment_date: "2023-10-01"
+        principal_payment: 195.00
+        interest_payment: 1.75
+        total_payment: 196.75
+        remaining_balance: 8275.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 11
+        payment_date: "2023-11-01"
+        principal_payment: 200.00
+        interest_payment: 0.00
+        total_payment: 200.00
+        remaining_balance: 8075.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 12
+        payment_date: "2023-12-01"
+        principal_payment: 205.00
+        interest_payment: 0.00
+        total_payment: 205.00
+        remaining_balance: 787
+      - payment_number: 12
+        payment_date: "2023-12-01"
+        principal_payment: 205.00
+        interest_payment: 0.00
+        total_payment: 205.00
+        remaining_balance: 7870.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 13
+        payment_date: "2024-01-01"
+        principal_payment: 210.00
+        interest_payment: 0.00
+        total_payment: 210.00
+        remaining_balance: 7660.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 14
+        payment_date: "2024-02-01"
+        principal_payment: 215.00
+        interest_payment: 0.00
+        total_payment: 215.00
+        remaining_balance: 7445.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 15
+        payment_date: "2024-03-01"
+        principal_payment: 220.00
+        interest_payment: 0.00
+        total_payment: 220.00
+        remaining_balance: 7225.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+      - payment_number: 16
+        payment_date: "2024-04-01"
+        principal_payment: 225.00
+        interest_payment: 0.00
+        total_payment: 225.00
+        remaining_balance: 7000.00
+        interest_rate: "5.00%"
+        additional_fees: 10.00
+        prepayment_amount: 0.00
+# Explanation of the YAML Structure
+# Each entry in the repayment_schedule list represents a payment.
+# Each payment entry includes:
+# payment_number: The sequential number of the payment.
+# payment_date: The date the payment is due.
+# principal_payment: The amount applied to the principal balance.
+# interest_payment: The amount applied to interest.
+# total_payment: The total amount paid in that installment.
+# remaining_balance: The outstanding balance after the payment.
+# interest_rate: The interest rate applied to the loan.
+# additional_fees: Any additional fees associated with the payment.
+# prepayment_amount: Any additional amount paid toward the principal beyond the scheduled payment.
+# Feel free to modify any values as needed!
+
